@@ -7,3 +7,6 @@ brain-games: # Запуск brain-games.php
 
 validate: # Запуск composer validate
 	composer validate
+
+lint: # Запуск phpcs
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
