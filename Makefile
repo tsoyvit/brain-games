@@ -13,3 +13,6 @@ lint: # Запуск phpcs
 
 brain-even: # Проверка на четность
 	php ./bin/brain-even
+
+brain-calc: # Игра калькулятор
+	php ./bin/brain-calc
