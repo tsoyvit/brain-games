@@ -3,10 +3,13 @@ install: # установить зависимости
 	npm install
 
 brain-games: # Запуск brain-games.php
-	php bin/brain-games
+	php ./bin/brain-games
 
 validate: # Запуск composer validate
 	composer validate
 
 lint: # Запуск phpcs
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
+
+brain-even: # Проверка на четность
+	php ./bin/brain-even
