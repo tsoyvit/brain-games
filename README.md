@@ -7,3 +7,6 @@
 
 ## Демонстрация игры Brain-calc
 [![asciicast](https://asciinema.org/a/v6IbHJFSy4x4N5lysAQCcIyc4.svg)](https://asciinema.org/a/v6IbHJFSy4x4N5lysAQCcIyc4)
+
+## Демонстрация игры Brain-gcd
+[![asciicast](https://asciinema.org/a/am4SsYYYyUfnsbZvl1O4oGEtz.svg)](https://asciinema.org/a/am4SsYYYyUfnsbZvl1O4oGEtz)
