@@ -19,7 +19,7 @@ function generateQuestion(): array
     }
 }
 
-function getData(): array
+function getGameData(): array
 {
     return [
         'rules' => 'Answer "yes" if the number is even, otherwise answer "no".',

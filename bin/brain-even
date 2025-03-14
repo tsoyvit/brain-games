@@ -3,14 +3,14 @@
 
 namespace Hexlet\Code;
 
-use function Hexlet\Code\Games\BrainEven\getData;
+use function Hexlet\Code\Games\BrainEven\getGameData;
 
 require 'vendor/autoload.php';
 require_once 'src/Engine.php';
 require_once 'src/games/BrainEven.php';
 
 
-$gameData = getData();
+$gameData = getGameData();
 $rules = $gameData["rules"];
 $generateQuestion = $gameData["generateQuestion"];
 $checkAnswer = $gameData["checkAnswer"];

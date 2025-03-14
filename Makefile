@@ -16,3 +16,6 @@ brain-even: # Проверка на четность
 
 brain-calc: # Игра калькулятор
 	php ./bin/brain-calc
+
+brain-gcd: # Игра gcd
+	php ./bin/brain-gcd
