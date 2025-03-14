@@ -1,5 +1,18 @@
 #!/usr/bin/env php
 <?php
 
+namespace Hexlet\Code;
+
+use function Hexlet\Code\Games\BrainEven\getData;
+
 require 'vendor/autoload.php';
-require_once 'src/BrainEven.php';
+require_once 'src/Engine.php';
+require_once 'src/games/BrainEven.php';
+
+
+$gameData = getData();
+$rules = $gameData["rules"];
+$generateQuestion = $gameData["generateQuestion"];
+$checkAnswer = $gameData["checkAnswer"];
+
+runGame($rules, $generateQuestion, $checkAnswer);
