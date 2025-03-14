@@ -3,9 +3,9 @@
 
 namespace Hexlet\Code;
 
-require 'vendor/autoload.php';
-require_once 'src/Engine.php';
-require_once 'src/games/BrainGcd.php';
+require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/Engine.php';
+require_once __DIR__ . '/../src/games/BrainGcd.php';
 
 use function Hexlet\Code\Games\BrainGcd\getData;
 

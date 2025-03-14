@@ -3,9 +3,9 @@
 
 namespace Hexlet\Code;
 
-require 'vendor/autoload.php';
-require_once 'src/Engine.php';
-require_once 'src/games/BrainPrime.php';
+require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/Engine.php';
+require_once __DIR__ . '/../src/games/BrainPrime.php';
 
 $dataGame = getGameData();
 $rules = $dataGame['rules'];

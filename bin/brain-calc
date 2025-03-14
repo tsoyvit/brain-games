@@ -5,9 +5,9 @@ namespace Hexlet\Code;
 
 use function Hexlet\Code\Games\BrainCalc\getGameData;
 
-require 'vendor/autoload.php';
-require_once 'src/Engine.php';
-require_once 'src/games/BrainCalc.php';
+require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/Engine.php';
+require_once __DIR__ . '/../src/games/BrainCalc.php';
 
 
 $gameData = getGameData();
