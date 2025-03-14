@@ -13,7 +13,7 @@ function randomExample($num1, $num2, $sign): int
     return match ($sign) {
         '+' => $num1 + $num2,
         '-' => $num1 - $num2,
-        '*' => $num1 * $num2,
+        default => $num1 * $num2,
     };
 }
 
