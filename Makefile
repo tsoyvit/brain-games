@@ -22,3 +22,6 @@ brain-gcd: # Игра gcd
 
 brain-progression: # Игра gcd
 	php ./bin/brain-progression
+
+brain-prime: # Игра gcd
+	php ./bin/brain-prime

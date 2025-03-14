@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+namespace Hexlet\Code;
+
+require 'vendor/autoload.php';
+require_once 'src/Engine.php';
+require_once 'src/games/BrainPrime.php';
+
+$dataGame = getGameData();
+$rules = $dataGame['rules'];
+$generateQuestion = $dataGame['generateQuestion'];
+$checkAnswer = $dataGame['checkAnswer'];
+
+runGame($rules, $generateQuestion, $checkAnswer);

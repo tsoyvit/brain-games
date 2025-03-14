@@ -7,7 +7,7 @@ use function Hexlet\Code\Games\BrainProgression\getGameData;
 
 require 'vendor/autoload.php';
 require_once 'src/Engine.php';
-require_once 'src/games/Brain-progression.php';
+require_once 'src/games/BrainProgression.php';
 
 $gameData = getGameData();
 $rules = $gameData['rules'];
