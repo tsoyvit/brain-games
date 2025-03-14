@@ -19,3 +19,6 @@ brain-calc: # Игра калькулятор
 
 brain-gcd: # Игра gcd
 	php ./bin/brain-gcd
+
+brain-progression: # Игра gcd
+	php ./bin/brain-progression

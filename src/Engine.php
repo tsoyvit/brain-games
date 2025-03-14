@@ -18,7 +18,7 @@ function runGame($rules, $generateQuestion, $checkAnswer): void
         $data = $generateQuestion();
         $question = $data['question'];
         $result = $data['result'];
-        $answer = prompt("Question: , $question");
+        $answer = prompt("Question: $question");
         line("Your answer: {$answer}");
         if ($checkAnswer($result, $answer)) {
             line('Correct!');
