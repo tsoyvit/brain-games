@@ -5,7 +5,7 @@ namespace Hexlet\Code;
 use function cli\line;
 use function cli\prompt;
 
-function runGame($rules, $generateQuestion, $checkAnswer): void
+function runGame(string $rules, callable $generateQuestion, callable $checkAnswer): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

@@ -2,7 +2,7 @@
 
 namespace Hexlet\Code\Games\BrainGcd;
 
-function gcd($a, $b): int
+function gcd(int $a, int $b): int
 {
     while ($b != 0) {
         list($a, $b) = array($b, $a % $b);

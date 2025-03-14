@@ -8,7 +8,7 @@ function randomSign(): string
     return $sign[array_rand($sign)];
 }
 
-function randomExample($num1, $num2, $sign): int
+function randomExample(int $num1, int $num2, string $sign): int
 {
     return match ($sign) {
         '+' => $num1 + $num2,
