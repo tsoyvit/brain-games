@@ -2,7 +2,6 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../src/cli/Cli.php';
 
 use function Hexlet\Code\Cli\welcome;
 

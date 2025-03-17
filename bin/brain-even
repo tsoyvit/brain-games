@@ -2,9 +2,6 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../src/engines/Engine.php';
-require_once __DIR__ . '/../src/games/BrainEven.php';
-require_once __DIR__ . '/../src/GameRunner.php';
 
 use function Hexlet\Code\Games\BrainEven\getGameData;
 use function Hexlet\Code\runGameFromData;
