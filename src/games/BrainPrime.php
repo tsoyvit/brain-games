@@ -1,5 +1,7 @@
 <?php
 
+namespace Hexlet\Code\Games\BrainPrime;
+
 function isPrime(int $num): bool
 {
     if ($num <= 1) {
@@ -16,16 +18,9 @@ function isPrime(int $num): bool
 function generateQuestion(): array
 {
     $question = rand(1, 200);
-    $res = isPrime($question);
-    if ($res) {
-        $result = 'yes';
-    } else {
-        $result = 'no';
-    }
-
     return [
         'question' => $question,
-        'result' => $result,
+        'result' => isPrime($question) ? 'yes' : 'no',
     ];
 }
 
@@ -35,9 +30,6 @@ function getGameData(): array
         'rules' => 'Answer "yes" if given number is prime. Otherwise answer "no".',
         'generateQuestion' => function () {
             return generateQuestion();
-        },
-        'checkAnswer' => function ($result, $answer): bool {
-            return $result == $answer;
         },
     ];
 }

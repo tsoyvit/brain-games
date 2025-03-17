@@ -2,26 +2,29 @@
 
 namespace Hexlet\Code\Games\BrainProgression;
 
-function randomArray(): array
+function createRandomArray(): array
 {
     $start = mt_rand(0, 50);
     $step = mt_rand(1, 9);
-    $a = [];
-    for ($i = $start; count($a) < 10; $i += $step) {
-        $a[] = $i;
+    $length = mt_rand(5, 10);
+    $array = [];
+
+    for ($i = 0; $i < $length; $i++) {
+        $array[] = $start + $i * $step;
     }
-    return $a;
+
+    return $array;
 }
 
 function generateQuestion(): array
 {
-    $data = randomArray();
-    $key = mt_rand(0, 9);
-    $replacements = array($key => "..");
+    $data = createRandomArray();
+    $key = mt_rand(0, count($data) - 1);
+    $replacements = [$key => ".."];
     $newData = array_replace($data, $replacements);
-    $str = implode(' ', $newData);
-    $question = $str;
+    $question = implode(' ', $newData);
     $result = $data[$key];
+
     return [
         'question' => $question,
         'result' => $result,
@@ -34,9 +37,6 @@ function getGameData(): array
         'rules' => 'What number is missing in the progression?',
         'generateQuestion' => function () {
             return generateQuestion();
-        },
-        'checkAnswer' => function ($result, $answer): bool {
-            return $result == $answer;
         },
     ];
 }

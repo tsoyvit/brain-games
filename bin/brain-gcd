@@ -1,17 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-namespace Hexlet\Code;
-
 require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../src/Engine.php';
+require_once __DIR__ . '/../src/engines/Engine.php';
 require_once __DIR__ . '/../src/games/BrainGcd.php';
+require_once __DIR__ . '/../src/GameRunner.php';
 
-use function Hexlet\Code\Games\BrainGcd\getData;
+use function Hexlet\Code\Games\BrainGcd\getGameData;
+use function Hexlet\Code\runGameFromData;
 
-$dataGame = getData();
-$rules = $dataGame['rules'];
-$generateQuestion = $dataGame['generateQuestion'];
-$checkAnswer = $dataGame['checkAnswer'];
+runGameFromData(getGameData(...));
 
-runGame($rules, $generateQuestion, $checkAnswer);

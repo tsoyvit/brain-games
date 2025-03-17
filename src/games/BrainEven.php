@@ -2,21 +2,17 @@
 
 namespace Hexlet\Code\Games\BrainEven;
 
+function isEven(int $number): bool
+{
+    return $number % 2 === 0;
+}
 function generateQuestion(): array
 {
     $num = mt_rand(1, 99);
-    $question = $num;
-    if ($num % 2 === 0) {
-        return [
-            "question" => $question,
-            "result" => 'yes'
-        ];
-    } else {
-        return [
-            "question" => $question,
-            "result" => 'no'
-        ];
-    }
+    return [
+        'question' => $num,
+        'result' => isEven($num) ? 'yes' : 'no',
+    ];
 }
 
 function getGameData(): array
@@ -25,9 +21,6 @@ function getGameData(): array
         'rules' => 'Answer "yes" if the number is even, otherwise answer "no".',
         'generateQuestion' => function () {
             return generateQuestion();
-        },
-        'checkAnswer' => function ($result, $answer): bool {
-            return $result == $answer;
         },
     ];
 }

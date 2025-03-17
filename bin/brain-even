@@ -1,18 +1,12 @@
 #!/usr/bin/env php
 <?php
 
-namespace Hexlet\Code;
+require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/engines/Engine.php';
+require_once __DIR__ . '/../src/games/BrainEven.php';
+require_once __DIR__ . '/../src/GameRunner.php';
 
 use function Hexlet\Code\Games\BrainEven\getGameData;
+use function Hexlet\Code\runGameFromData;
 
-require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../src/Engine.php';
-require_once __DIR__ . '/../src/games/BrainEven.php';
-
-
-$gameData = getGameData();
-$rules = $gameData["rules"];
-$generateQuestion = $gameData["generateQuestion"];
-$checkAnswer = $gameData["checkAnswer"];
-
-runGame($rules, $generateQuestion, $checkAnswer);
+runGameFromData(getGameData(...));

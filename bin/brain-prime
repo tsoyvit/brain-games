@@ -1,15 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-namespace Hexlet\Code;
-
 require __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../src/Engine.php';
+require_once __DIR__ . '/../src/engines/Engine.php';
 require_once __DIR__ . '/../src/games/BrainPrime.php';
+require_once __DIR__ . '/../src/GameRunner.php';
 
-$dataGame = getGameData();
-$rules = $dataGame['rules'];
-$generateQuestion = $dataGame['generateQuestion'];
-$checkAnswer = $dataGame['checkAnswer'];
+use function Hexlet\Code\Games\BrainPrime\getGameData;
+use function Hexlet\Code\runGameFromData;
 
-runGame($rules, $generateQuestion, $checkAnswer);
+runGameFromData(getGameData(...));
+

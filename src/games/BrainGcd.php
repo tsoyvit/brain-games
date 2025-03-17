@@ -22,15 +22,12 @@ function generateQuestion(): array
     ];
 }
 
-function getData(): array
+function getGameData(): array
 {
     return [
         'rules' => 'Find the greatest common divisor of given numbers.',
         'generateQuestion' => function () {
             return generateQuestion();
-        },
-        'checkAnswer' => function ($result, $answer): bool {
-            return $result == $answer;
         },
     ];
 }
