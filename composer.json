@@ -25,13 +25,13 @@
     "autoload": {
         "files": [
             "src/cli/Cli.php",
-            "src/engines/Engine.php",
+            "src/core/Engine.php",
             "src/games/BrainCalc.php",
             "src/games/BrainEven.php",
             "src/games/BrainGcd.php",
             "src/games/BrainPrime.php",
             "src/games/BrainProgression.php",
-            "src/GameRunner.php"
+            "src/core/GameRunner.php"
         ]
     }
 }
