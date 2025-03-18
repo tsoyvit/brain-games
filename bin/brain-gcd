@@ -4,7 +4,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use function Hexlet\Code\Games\BrainGcd\getGameData;
-use function Hexlet\Code\Core\GameRunner\runGameFromData;
+use function Hexlet\Code\Core\Engine\runGameFromData;
 
 runGameFromData(getGameData(...));
 

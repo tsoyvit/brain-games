@@ -30,3 +30,9 @@ function runGame(string $rules, callable $generateQuestion): void
     }
     line("Congratulations, {$name}!");
 }
+
+function runGameFromData(callable $getGameData): void
+{
+    $gameData = $getGameData();
+    runGame($gameData['rules'], $gameData['generateQuestion']);
+}

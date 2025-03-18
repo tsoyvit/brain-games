@@ -30,8 +30,7 @@
             "src/games/BrainEven.php",
             "src/games/BrainGcd.php",
             "src/games/BrainPrime.php",
-            "src/games/BrainProgression.php",
-            "src/core/GameRunner.php"
+            "src/games/BrainProgression.php"
         ]
     }
 }
