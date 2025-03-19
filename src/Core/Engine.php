@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Core\Engine;
+namespace BrainGames\Core;
 
 use function cli\line;
 use function cli\prompt;
@@ -11,9 +11,9 @@ function runGame(string $rules, callable $generateQuestion): void
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($rules);
-    $rounds = 3;
+    $roundsCount = 3;
 
-    for ($i = 0; $i < $rounds; $i++) {
+    for ($i = 0; $i < $roundsCount; $i++) {
         $data = $generateQuestion();
         $question = $data['question'];
         $correctAnswer = $data['result'];
@@ -29,10 +29,4 @@ function runGame(string $rules, callable $generateQuestion): void
         }
     }
     line("Congratulations, {$name}!");
-}
-
-function runGameFromData(callable $getGameData): void
-{
-    $gameData = $getGameData();
-    runGame($gameData['rules'], $gameData['generateQuestion']);
 }

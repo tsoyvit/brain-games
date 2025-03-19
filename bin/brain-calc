@@ -3,7 +3,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use function Hexlet\Code\Games\BrainCalc\getGameData;
-use function Hexlet\Code\Core\Engine\runGameFromData;
+use function BrainGames\Games\BrainCalc\getGameData;
+use function BrainGames\Core\runGame;
 
-runGameFromData(getGameData(...));
+$gameData = getGameData();
+runGame($gameData['rules'], $gameData['generateQuestion']);

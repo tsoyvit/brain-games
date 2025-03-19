@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Games\BrainProgression;
+namespace BrainGames\Games\BrainProgression;
 
 function createRandomArray(): array
 {

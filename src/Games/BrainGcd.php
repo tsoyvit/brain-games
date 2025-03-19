@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Games\BrainGcd;
+namespace BrainGames\Games\BrainGcd;
 
 function gcd(int $a, int $b): int
 {

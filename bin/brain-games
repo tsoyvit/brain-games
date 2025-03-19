@@ -3,6 +3,6 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use function Hexlet\Code\Cli\welcome;
+use function BrainGames\Cli\welcome;
 
 welcome();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Games\BrainPrime;
+namespace BrainGames\Games\BrainPrime;
 
 function isPrime(int $num): bool
 {

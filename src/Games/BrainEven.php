@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Games\BrainEven;
+namespace BrainGames\Games\BrainEven;
 
 function isEven(int $number): bool
 {

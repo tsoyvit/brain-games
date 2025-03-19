@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Games\BrainCalc;
+namespace BrainGames\Games\BrainCalc;
 
 function createRandomSign(): string
 {
@@ -8,13 +8,13 @@ function createRandomSign(): string
     return $sign[array_rand($sign)];
 }
 
-function createRandomExample(int $num1, int $num2, string $sign): int
+function createRandomExample(int $num1, int $num2, string $sign): ?int
 {
     return match ($sign) {
         '+' => $num1 + $num2,
         '-' => $num1 - $num2,
         '*' => $num1 * $num2,
-        default => 0,
+        default => null,
     };
 }
 
