@@ -2,23 +2,23 @@
 
 namespace BrainGames\Games\BrainProgression;
 
-function createRandomArray(): array
+function createProgression(): array
 {
     $start = mt_rand(0, 50);
     $step = mt_rand(1, 9);
     $length = mt_rand(5, 10);
-    $array = [];
+    $progression = [];
 
     for ($i = 0; $i < $length; $i++) {
-        $array[] = $start + $i * $step;
+        $progression[] = $start + $i * $step;
     }
 
-    return $array;
+    return $progression;
 }
 
 function generateQuestion(): array
 {
-    $data = createRandomArray();
+    $data = createProgression();
     $key = mt_rand(0, count($data) - 1);
     $replacements = [$key => ".."];
     $newData = array_replace($data, $replacements);
