@@ -1,6 +1,3 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/tsoyvit/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/tsoyvit/php-project-45/actions)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/7560d88ae10bb5b87a57/maintainability)](https://codeclimate.com/github/tsoyvit/php-project-45/maintainability)
 
 **Brain Games** — это набор из пяти консольных игр, построенных на базе PHP. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов игра считается завершенной. Неправильный ответ завершает игру и предлагает пройти её заново.
