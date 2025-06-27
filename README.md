@@ -23,7 +23,7 @@
 
 1. Склонируйте репозиторий:
    
-   git clone https://github.com/tsoyvit/php-project-45.git
+   git clone https://github.com/tsoyvit/brain-games.git
    cd php-project-45
 
 2. Установите зависимости: make install
